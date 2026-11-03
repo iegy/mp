@@ -290,6 +290,14 @@ footer .links a{text-decoration:none;background:#1f1e25;border:1px solid var(--l
       <h2 data-ar="كل اللي تحتاجه في مشغّل واحد" data-en="EVERYTHING IN ONE PLAYER">كل اللي تحتاجه في مشغّل واحد</h2>
       <p class="sub" data-ar="قوة المشغلات الاحترافية — بشكل عمرك ما شفته في مشغّل قبل كده." data-en="Pro-player power — in a look you've never seen in a player.">قوة المشغلات الاحترافية — بشكل عمرك ما شفته في مشغّل قبل كده.</p>
       <div class="features">
+        <div class="f reveal"><div class="spine hand" style="background:#d1495b;color:#fff">NEW · 1.1</div>
+          <h3 data-ar="جديد في 1.1" data-en="New in 1.1">جديد في 1.1</h3>
+          <ul>
+            <li data-ar="شرائطي (Mixtapes) والمفضلة ♥" data-en="Mixtapes & favorites ♥">شرائطي (Mixtapes) والمفضلة ♥</li>
+            <li data-ar="كلمات الأغاني متزامنة على شاشة المشغل" data-en="Synced lyrics on the deck display">كلمات الأغاني متزامنة على شاشة المشغل</li>
+            <li data-ar="ترجمة أونلاين، ومتصفح ملفات، وويدجت كاسيت" data-en="Online subtitles, file browser, cassette widget">ترجمة أونلاين، ومتصفح ملفات، وويدجت كاسيت</li>
+            <li data-ar="٧ أشكال للكاسيت و٨ أشكال للمشغل" data-en="7 cassette styles and 8 deck skins">٧ أشكال للكاسيت و٨ أشكال للمشغل</li>
+          </ul></div>
         <div class="f reveal"><div class="spine hand" style="background:#f2b391">Side A — Audio</div>
           <h3 data-ar="مشغّل كاسيت حقيقي" data-en="A real cassette deck">مشغّل كاسيت حقيقي</h3>
           <ul>
@@ -355,7 +363,7 @@ footer .links a{text-decoration:none;background:#1f1e25;border:1px solid var(--l
   <section>
     <div class="wrap">
       <h2 data-ar="اختار شكل المشغل" data-en="PICK YOUR DECK">اختار شكل المشغل</h2>
-      <p class="sub" data-ar="خمسة موديلات مستوحاة من أجهزة الثمانينات." data-en="Five models inspired by 80s hardware.">خمسة موديلات مستوحاة من أجهزة الثمانينات.</p>
+      <p class="sub" data-ar="ثمانية موديلات مستوحاة من أجهزة الثمانينات." data-en="Eight models inspired by 80s hardware.">ثمانية موديلات مستوحاة من أجهزة الثمانينات.</p>
       <div class="skins" id="skins"></div>
     </div>
   </section>
@@ -443,7 +451,7 @@ footer .links a{text-decoration:none;background:#1f1e25;border:1px solid var(--l
   }, 1000);
 
   // ---- skins ----
-  var skins = [['Crimson CS-1','#b8262f','#7e151c','#c9c7e2','#f2a93b','#f1eee8'],['Mustard CS-2','#e2a72e','#b27a12','#2d2b30','#e5482f','#26252a'],['Hi-Fi Silver SX-80','#c7cbd1','#8e939b','#2b2c30','#2ea3f2','#e9e4d8'],['Midnight NX-9','#1f2430','#12151c','#39404f','#7fd1b9','#2f3440'],['Walnut W-70','#efe5cf','#cdbf9e','#6b4a32','#d9572b','#f6f0e2']];
+  var skins = [['Walkman WM-2','#2f5d9e','#1c3c6e','#d9dce2','#f2a93b','#f1eee8'],['Boombox BX-85','#2a2a2e','#111113','#b9bec6','#e5482f','#1c1c20'],['Pastel PX-1','#f4b6c2','#d98ca0','#fff6ec','#7fc8a9','#fffbf5'],['Crimson CS-1','#b8262f','#7e151c','#c9c7e2','#f2a93b','#f1eee8'],['Mustard CS-2','#e2a72e','#b27a12','#2d2b30','#e5482f','#26252a'],['Hi-Fi Silver SX-80','#c7cbd1','#8e939b','#2b2c30','#2ea3f2','#e9e4d8'],['Midnight NX-9','#1f2430','#12151c','#39404f','#7fd1b9','#2f3440'],['Walnut W-70','#efe5cf','#cdbf9e','#6b4a32','#d9572b','#f6f0e2']];
   document.getElementById('skins').innerHTML = skins.map(function(s){
     return '<div class="skin"><div class="mini"><div class="b" style="background:linear-gradient('+s[1]+','+s[2]+')"><div class="w"><span style="background:'+s[5]+'"></span></div></div><div class="p" style="background:'+s[3]+'"><i style="background:'+s[4]+'"></i><i style="background:#ddd"></i><i style="background:#ddd"></i><i style="background:#ddd"></i></div></div><b>'+s[0]+'</b></div>';
   }).join('');
